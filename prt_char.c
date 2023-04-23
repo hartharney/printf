@@ -9,9 +9,6 @@ int prt_char(va_list args)
 	char i;
 
 	i = va_arg(args, int);
-	if (i == '\0')
-		return (0);
-
 	_putchar(i);
 	return (1);
 }
