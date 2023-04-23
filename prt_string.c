@@ -23,6 +23,7 @@ int prt_string(va_list args)
 			count += 1;
 			i++;
 		}
+		return (count);
 	}
 	while (s[i] != '\0')
 	{
