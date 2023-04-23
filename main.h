@@ -23,5 +23,6 @@ typedef struct format
 
 int prt_percent(void);
 int prt_string(va_list args);
+int prt_char(va_list args);
 
 #endif
