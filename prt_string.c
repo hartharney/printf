@@ -14,10 +14,10 @@ int prt_string(va_list args)
 	i = 0;
 	count = 0;
 
-	if (s == NULL)
+	if (*s == '\0')
 	{
 		s = "(nul)";
-		while (s != '\0')
+		while (s[i] != '\0')
 		{
 			_putchar(s[i]);
 			count += 1;
