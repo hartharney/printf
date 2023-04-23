@@ -14,18 +14,6 @@ int prt_string(va_list args)
 	i = 0;
 	count = 0;
 
-	if (*s == '\0')
-	{
-		s = "(nul)";
-		while (s[i] != '\0')
-		{
-			_putchar(s[i]);
-			count += 1;
-			i++;
-		}
-		return (count);
-	}
-
 	while (s[i] != '\0')
 	{
 		_putchar(s[i]);
