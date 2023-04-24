@@ -13,8 +13,8 @@ int _printf(const char *format, ...)
 
 	my_type m[] = {
 		{"%%", prt_percent},
-		/*{"%S", prt_string},*/
-		{"%c", prt_char}
+		{"%S", prt_string},
+		/*{"%c", prt_char}*/
 	};
 
 	count = 0;
