@@ -9,6 +9,7 @@ int prt_char(va_list args)
 	char i;
 
 	i = va_arg(args, int);
-	_putchar(i);
+	write(1, &i, 1);
+	/*_putchar(i);*/
 	return (1);
 }
