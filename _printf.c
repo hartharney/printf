@@ -11,20 +11,14 @@ int _printf(const char *format, ...)
 	int j;
 	va_list args;
 
-	my_type m[] = {
-		{"%%", prt_percent},
-		{"%S", prt_string},
-		{"%c", prt_char}
-	};
+	my_type m[] = {{"%%", prt_percent}, {"%S", prt_string}, {"%c", prt_char}};
 
 	count = 0;
 	i = 0;
 
 	if (format == NULL)
 		return (0);
-
 	va_start(args, format);
-
 	while (format[i] != '\0')
 	{
 		if (format[i] != '%')
