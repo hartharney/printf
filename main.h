@@ -8,7 +8,7 @@
 #include <unistd.h>
 
 int _printf(const char *format, ...);
-/*int _putchar(char c);*/
+int _putchar(char c);
 /**
  * struct format - structure that defines
  * the format specifier and the function that defines it

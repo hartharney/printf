@@ -5,6 +5,6 @@
  */
 int prt_percent(void)
 {
-	/*_putchar('%');*/
+	_putchar('%');
 	return (1);
 }
