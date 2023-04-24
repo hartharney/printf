@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 
 	my_type m[] = {
 		{"%%", prt_percent},
-		{"%S", prt_string},
+		/*{"%S", prt_string},*/
 		{"%c", prt_char}
 	};
 
@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			for (j = 0 ; j < 3 ; j++)
+			for (j = 0 ; j < 2 ; j++)
 			{
 				if (m[j].id[1] == format[i + 1])
 				{
