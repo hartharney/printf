@@ -9,6 +9,7 @@
 
 int _printf(const char *format, ...);
 int _putchar(char c);
+void print_buffer(char *buffer, unsigned int num_of_bytes);
 /**
  * struct format - structure that defines
  * the format specifier and the function that defines it
