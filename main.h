@@ -7,9 +7,9 @@
 #include <limits.h>
 #include <unistd.h>
 
+void print_buffer(char *buffer, unsigned int num_of_bytes);
 int _printf(const char *format, ...);
 int _putchar(char c);
-void print_buffer(char *buffer, unsigned int num_of_bytes);
 /**
  * struct format - structure that defines
  * the format specifier and the function that defines it
@@ -22,7 +22,7 @@ typedef struct format
 	int (*function)();
 } my_type;
 
-int prt_percent(void);
+int prt_percent(va_list args);
 int prt_string(va_list args);
 int prt_char(va_list args);
 
